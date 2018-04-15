@@ -19,14 +19,14 @@ public class SceneBuilder extends Application {
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
 			primaryStage.show();
-		}
-		catch(IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
 	public static void main(String[] args) {
 		System.out.println("Hello");
+		System.out.println("hi");
 		launch(args);
 	}
 }
