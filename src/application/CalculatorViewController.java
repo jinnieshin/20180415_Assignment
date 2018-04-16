@@ -1,24 +1,14 @@
 package application;
 
 import javafx.fxml.FXML;
+
 import javafx.scene.control.Button;
+
 import javafx.scene.control.TextArea;
 
 public class CalculatorViewController {
 	@FXML
-	private Button num0;
-	@FXML
-	private Button num1;
-	@FXML
-	private Button num2;
-	@FXML
-	private Button num3;
-	@FXML
-	private Button num4;
-	@FXML
-	private Button num5;
-	@FXML
-	private Button num6;
+	private TextArea ta;
 	@FXML
 	private Button num7;
 	@FXML
@@ -28,65 +18,100 @@ public class CalculatorViewController {
 	@FXML
 	private Button plus;
 	@FXML
+	private Button num4;
+	@FXML
+	private Button num5;
+	@FXML
+	private Button num6;
+	@FXML
 	private Button minus;
+	@FXML
+	private Button num1;
+	@FXML
+	private Button num2;
+	@FXML
+	private Button num3;
 	@FXML
 	private Button multiply;
 	@FXML
-	private Button divide;
+	private Button clear;
+	@FXML
+	private Button num0;
 	@FXML
 	private Button equals;
 	@FXML
-	private Button clear;
-	@FXML
-	private TextArea ta;
+	private Button divide;
 	
-	private void clickNum0() {
-		ta.setText("0");
+	public void clickNum0() {
+		ta.setText(ta.getText() + "0");
 	}
-	private void clickNum1() {
-		ta.setText("1");
+	
+	public void clickNum1() {
+		ta.setText(ta.getText() + "1");
 	}
-	private void clickNum2() {
-		ta.setText("2");
+	
+	public void clickNum2() {
+		ta.setText(ta.getText() + "2");
 	}
-	private void clickNum3() {
-		ta.setText("3");
+	
+	public void clickNum3() {
+		ta.setText(ta.getText() + "3");
 	}
-	private void clickNum4() {
-		ta.setText("4");
+	
+	public void clickNum4() {
+		ta.setText(ta.getText() + "4");
 	}
-	private void clickNum5() {
-		ta.setText("5");
+	
+	public void clickNum5() {
+		ta.setText(ta.getText() + "5");
 	}
-	private void clickNum6() {
-		ta.setText("6");
+	
+	public void clickNum6() {
+		ta.setText(ta.getText() + "6");
 	}
-	private void clickNum7() {
-		ta.setText("7");
+	
+	public void clickNum7() {
+		ta.setText(ta.getText() + "7");
 	}
-	private void clickNum8() {
-		ta.setText("8");
+	
+	public void clickNum8() {
+		ta.setText(ta.getText() + "8");
 	}
-	private void clickNum9() {
-		ta.setText("9");
+	
+	public void clickNum9() {
+		ta.setText(ta.getText() + "9");
 	}
-	private void clickPlus() {
-		ta.setText("+");
+	
+	public void clickPlus() {
+		ta.setText(ta.getText() + "+");
 	}
-	private void clickMinus() {
-		ta.setText("-");
+	
+	public void clickMinus() {
+		ta.setText(ta.getText() + "-");
 	}
-	private void clickMultiply() {
-		ta.setText("*");
+	
+	public void clickMultiply() {
+		ta.setText(ta.getText() + "*");
 	}
-	private void clickDivide() {
-		ta.setText("/");
+	
+	public void clickDivide() {
+		ta.setText(ta.getText() + "/");
 	}
-	private void clickEquals() {
-		String s = ta.getText();
-		//model 불러서 계산시키고 setText();
+	
+	public void clickEquals() {
+		CalculatorModel m = new CalculatorModel();
+		double ans = m.calculate(ta.getText());
+		String s;
+		if (ans - Math.floor(ans) == 0) {
+			s = String.valueOf((int) ans);
+		}
+		else {
+			s = String.valueOf(ans);
+		}
+		ta.setText(s);
 	}
-	private void clickClear() {
+	
+	public void clickClear() {
 		ta.setText("");
 	}
 }

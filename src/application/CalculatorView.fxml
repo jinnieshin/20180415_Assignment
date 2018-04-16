@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalculatorViewController">
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #99CCFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalculatorViewController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -21,92 +21,92 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <TextArea fx:id="ta" editable="false" prefHeight="200.0" prefWidth="200.0" text="Text" GridPane.columnSpan="4">
+      <TextArea fx:id="ta" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="4">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
          <GridPane.margin>
-            <Insets bottom="15.0" left="20.0" right="20.0" top="30.0" />
+            <Insets left="15.0" right="15.0" top="30.0" />
          </GridPane.margin>
       </TextArea>
-      <Button fx:id="num7" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <Button fx:id="num7" alignment="CENTER" mnemonicParsing="false" onAction="#clickNum7" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="7" textFill="#003651" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="num8" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <Button fx:id="num8" alignment="CENTER" mnemonicParsing="false" onAction="#clickNum8" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="8" textFill="#003651" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="num9" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <Button fx:id="num9" alignment="CENTER" mnemonicParsing="false" onAction="#clickNum9" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="9" textFill="#003651" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="plus" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <Button fx:id="plus" alignment="CENTER" mnemonicParsing="false" onAction="#clickPlus" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="+" textFill="#003651" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="num4" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <Button fx:id="num4" alignment="CENTER" mnemonicParsing="false" onAction="#clickNum4" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="4" textFill="#003651" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="num5" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <Button fx:id="num5" alignment="CENTER" mnemonicParsing="false" onAction="#clickNum5" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="5" textFill="#003651" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="num6" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <Button fx:id="num6" alignment="CENTER" mnemonicParsing="false" onAction="#clickNum6" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="6" textFill="#003651" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="minus" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <Button fx:id="minus" alignment="CENTER" mnemonicParsing="false" onAction="#clickMinus" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="-" textFill="#003651" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="num1" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <Button fx:id="num1" alignment="CENTER" mnemonicParsing="false" onAction="#clickNum1" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="1" textFill="#003651" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="num2" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <Button fx:id="num2" alignment="CENTER" mnemonicParsing="false" onAction="#clickNum2" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="2" textFill="#003651" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="num3" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <Button fx:id="num3" alignment="CENTER" mnemonicParsing="false" onAction="#clickNum3" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="3" textFill="#003651" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="multiply" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="*" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <Button fx:id="multiply" alignment="CENTER" mnemonicParsing="false" onAction="#clickMultiply" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="*" textFill="#003651" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="clear" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="clr" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+      <Button fx:id="clear" alignment="CENTER" mnemonicParsing="false" onAction="#clickClear" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="clr" textFill="#003651" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="num0" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+      <Button fx:id="num0" alignment="CENTER" mnemonicParsing="false" onAction="#clickNum0" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="0" textFill="#003651" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="equals" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="=" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+      <Button fx:id="equals" alignment="CENTER" mnemonicParsing="false" onAction="#clickEquals" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="=" textFill="#003651" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="divide" mnemonicParsing="false" prefHeight="55.0" prefWidth="85.0" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+      <Button fx:id="divide" alignment="CENTER" mnemonicParsing="false" onAction="#clickDivide" opacity="0.87" prefHeight="55.0" prefWidth="85.0" text="/" textFill="#003651" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
          <font>
-            <Font size="24.0" />
+            <Font name="Arial" size="24.0" />
          </font>
       </Button>
    </children>
